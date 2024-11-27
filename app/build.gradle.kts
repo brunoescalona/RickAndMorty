@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    alias(libs.plugins.serialization)
 }
 
 android {
@@ -49,6 +50,8 @@ android {
 
 dependencies {
 
+    implementation(libs.retrofit2)
+    implementation(libs.serialization)
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
@@ -58,6 +61,8 @@ dependencies {
     implementation(libs.ui.tooling.preview)
     implementation(libs.material3)
     testImplementation(libs.junit)
+    testImplementation("junit:junit:4.12")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(platform(libs.compose.bom))
