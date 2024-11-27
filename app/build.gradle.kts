@@ -50,6 +50,7 @@ android {
 
 dependencies {
 
+    implementation(libs.coil)
     implementation(libs.retrofit2)
     implementation(libs.serialization)
     implementation(libs.core.ktx)
