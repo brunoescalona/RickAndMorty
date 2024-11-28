@@ -75,10 +75,12 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation("junit:junit:4.12")
     testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    testImplementation(libs.coroutines.test)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(platform(libs.compose.bom))
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+    testImplementation(libs.mockito)
 }
