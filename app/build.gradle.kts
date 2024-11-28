@@ -49,10 +49,12 @@ android {
 }
 
 dependencies {
-
+    implementation(libs.okhttp)
     implementation(libs.coil)
+    implementation(libs.coil.network)
     implementation(libs.retrofit2)
     implementation(libs.serialization)
+    implementation(libs.serialization.converter)
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
