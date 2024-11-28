@@ -2,12 +2,13 @@ package com.example.test.data.network.mappers
 
 import com.example.test.data.network.models.CharacterEntity
 import com.example.test.domain.models.Character
+import javax.inject.Inject
 
 interface CharacterEntityMapper {
     fun map(entity: CharacterEntity): Character
 }
 
-class CharacterEntityMapperImpl : CharacterEntityMapper {
+class CharacterEntityMapperImpl @Inject constructor(): CharacterEntityMapper {
     override fun map(entity: CharacterEntity): Character {
         return Character(
             id = entity.id,

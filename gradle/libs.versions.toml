@@ -31,9 +31,12 @@ retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version = "2.
 coil = { group = "io.coil-kt.coil3", name = "coil-compose", version = "3.0.4" }
 coil-network = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version = "3.0.4" }
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version = "4.12.0" }
+hilt = { group = "com.google.dagger", name = "hilt-android", version = "2.51.1" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version = "2.51.1" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-
+hiltAndroid = { id = "com.google.dagger.hilt.android", version = "2.51.1" }
+ksp = { id = "com.google.devtools.ksp", version = "1.9.0-1.0.12" }

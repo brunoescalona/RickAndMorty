@@ -2,12 +2,13 @@ package com.example.test.data.network
 
 import com.example.test.data.network.api.CharacterApi
 import com.example.test.data.network.models.CharacterResponse
+import javax.inject.Inject
 
 interface CharacterNetworkDataSource {
     suspend fun getCharacterResponse(): Result<CharacterResponse>
 }
 
-class CharacterNetworkDataSourceImpl(
+class CharacterNetworkDataSourceImpl @Inject constructor(
     private val api: CharacterApi
 ) : CharacterNetworkDataSource {
     override suspend fun getCharacterResponse(): Result<CharacterResponse> {
